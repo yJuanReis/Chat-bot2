@@ -1,6 +1,6 @@
 ---
 title: UltimaX Intelligence
-short_description: Powered by the Pollinations open-source AI community
+short_description: Premium AI for everyone, equipped with advanced tools.
 license: mit
 emoji: ⚡
 colorFrom: purple
@@ -47,3 +47,5 @@ models:
 - THUDM/GLM-4.1V-9B-Thinking
 - tngtech/DeepSeek-TNG-R1T2-Chimera
 ---
+
+This service is powered by the [Pollinations](https://github.com/pollinations/pollinations) open-source AI community.

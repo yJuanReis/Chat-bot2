@@ -13,7 +13,10 @@ WORKDIR /app/backend
 COPY webui.db /app/backend/data/
 
 # Set the database file to read-only
-# to prevent unauthorized changes and improve security
+# to prevent unauthorized changes and improve security.
+# This database is a placeholder or dummy,
+# and the core configuration is located in the Environment
+# and Secret Environment settings of Hugging Face Spaces.
 RUN chmod 555 /app/backend/data/webui.db
 
 # Open the port so the application can be accessed
