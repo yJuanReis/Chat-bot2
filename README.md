@@ -36,7 +36,9 @@ models:
 - meta-llama/Llama-3.3-70B-Instruct
 - meta-llama/Llama-4-Maverick-17B-128E-Instruct
 - meta-llama/Llama-4-Scout-17B-16E-Instruct
+- microsoft/Phi-4-mini-instruct
 - mistralai/Devstral-Small-2505
+- mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - openai/webgpt_comparisons
 - openai/whisper-large-v3-turbo
 - Qwen/QwQ-32B
