@@ -10,7 +10,7 @@ FROM hadadrjt/ai:latest
 WORKDIR /app/backend
 
 # Copy the database file into the container
-COPY --chown=$UID:$GID webui.db /app/backend/data/
+COPY --chown=$UID:$GID src/database/webui.db /app/backend/data/
 
 # Set the database file to read-only
 # to prevent unauthorized changes and improve security.
@@ -34,16 +34,16 @@ RUN search='<meta name="robots" content="noindex,nofollow"' && \
         fi; \
     done
 # https://umint-ai.hf.space/robots.txt
-COPY --chown=$UID:$GID robots.txt /app/build/
+COPY --chown=$UID:$GID src/crawlers/robots.txt /app/build/
 # Sitemaps
 # https://umint-ai.hf.space/sitemap.xml
-COPY --chown=$UID:$GID sitemap.xml /app/build/
+COPY --chown=$UID:$GID src/crawlers/sitemap.xml /app/build/
 # Google Search Console Tools
 # https://umint-ai.hf.space/google15aba15fe250d693.html
-COPY --chown=$UID:$GID google15aba15fe250d693.html /app/build/
+COPY --chown=$UID:$GID src/webmasters/google.html /app/build/google15aba15fe250d693.html
 # Bing Webmaster Tools
 # https://umint-ai.hf.space/BingSiteAuth.xml
-COPY --chown=$UID:$GID BingSiteAuth.xml /app/build/
+COPY --chown=$UID:$GID src/webmasters/bing.xml /app/build/BingSiteAuth.xml
 
 # Open the port so the application can be accessed
 EXPOSE 8000
