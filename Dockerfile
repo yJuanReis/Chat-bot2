@@ -19,6 +19,32 @@ COPY --chown=$UID:$GID webui.db /app/backend/data/
 # and Secret Environment settings of Hugging Face Spaces.
 RUN chmod 555 /app/backend/data/webui.db
 
+# Search Engine Optimization (SEO)
+# Robots Exclusion Protocol
+RUN search='<meta name="robots" content="noindex,nofollow"' && \
+    replace='<meta name="robots" content="index,follow"' && \
+    find /app -type f -name '*.html' -exec grep -l "$search" {} \; | \
+    while IFS= read -r file; do \
+        echo "Processing: $file" && \
+        if sed -i "s|$search|$replace|g" "$file"; then \
+            echo "Success: $file updated"; \
+        else \
+            echo "Error: failed to update $file"; \
+            exit 1; \
+        fi; \
+    done
+# https://umint-ai.hf.space/robots.txt
+COPY --chown=$UID:$GID robots.txt /app/build/
+# Sitemaps
+# https://umint-ai.hf.space/sitemap.xml
+COPY --chown=$UID:$GID sitemap.xml /app/build/
+# Google Search Console Tools
+# https://umint-ai.hf.space/google15aba15fe250d693.html
+COPY --chown=$UID:$GID google15aba15fe250d693.html /app/build/
+# Bing Webmaster Tools
+# https://umint-ai.hf.space/BingSiteAuth.xml
+COPY --chown=$UID:$GID BingSiteAuth.xml /app/build/
+
 # Open the port so the application can be accessed
 EXPOSE 8000
 
