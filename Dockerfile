@@ -20,7 +20,7 @@ COPY --chown=$UID:$GID webui.db /app/backend/data/
 RUN chmod 555 /app/backend/data/webui.db
 
 # Open the port so the application can be accessed
-EXPOSE 7860
+EXPOSE 8000
 
 # Start the application using the startup script
 CMD ["bash", "start.sh"]

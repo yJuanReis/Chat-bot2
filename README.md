@@ -6,7 +6,7 @@ emoji: ⚡
 colorFrom: purple
 colorTo: green
 sdk: docker
-app_port: 7860
+app_port: 8000
 pinned: true
 thumbnail: >-
   https://cdn-uploads.huggingface.co/production/uploads/686e28b405d4ddcdd96adeb2/i9iufR3L-rgj39mk_B9QW.jpeg
