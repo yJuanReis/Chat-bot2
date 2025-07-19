@@ -10,7 +10,7 @@ FROM hadadrjt/ai:latest
 WORKDIR /app/backend
 
 # Copy the database file into the container
-COPY webui.db /app/backend/data/
+COPY --chown=$UID:$GID webui.db /app/backend/data/
 
 # Set the database file to read-only
 # to prevent unauthorized changes and improve security.
