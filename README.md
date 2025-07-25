@@ -48,6 +48,10 @@ models:
 - Qwen/Qwen3-235B-A22B
 - THUDM/GLM-4.1V-9B-Thinking
 - tngtech/DeepSeek-TNG-R1T2-Chimera
+- moonshotai/Kimi-K2-Instruct
+- Qwen/Qwen3-235B-A22B-Instruct-2507
+- Qwen/Qwen3-Coder-480B-A35B-Instruct
+- Qwen/Qwen3-235B-A22B-Thinking-2507
 ---
 
 This service is powered by the [Pollinations](https://github.com/pollinations/pollinations) open-source AI community.
