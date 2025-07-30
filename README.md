@@ -1,6 +1,6 @@
 ---
 title: UltimaX Intelligence
-short_description: Premium AI for everyone, equipped with advanced tools.
+short_description: Premium AI | Tools | Code Interpreter | Web Generator | etc
 license: mit
 emoji: ⚡
 colorFrom: purple
@@ -52,6 +52,8 @@ models:
 - Qwen/Qwen3-235B-A22B-Instruct-2507
 - Qwen/Qwen3-Coder-480B-A35B-Instruct
 - Qwen/Qwen3-235B-A22B-Thinking-2507
+- zai-org/GLM-4.5
+- zai-org/GLM-4.5-Air
 ---
 
 This service is powered by the [Pollinations](https://github.com/pollinations/pollinations) open-source AI community.
