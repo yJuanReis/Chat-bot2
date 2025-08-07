@@ -41,6 +41,8 @@ models:
 - mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - openai/webgpt_comparisons
 - openai/whisper-large-v3-turbo
+- openai/gpt-oss-120b
+- openai/gpt-oss-20b
 - Qwen/QwQ-32B
 - Qwen/Qwen2.5-VL-32B-Instruct
 - Qwen/Qwen2.5-VL-3B-Instruct
