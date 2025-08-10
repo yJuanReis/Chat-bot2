@@ -1,12 +1,12 @@
 ---
 title: UltimaX Intelligence
 short_description: Premium AI | Tools | Code Interpreter | Web Generator | etc
-license: mit
+license: apache-2.0
 emoji: ⚡
 colorFrom: purple
 colorTo: green
 sdk: docker
-app_port: 8000
+app_port: 7860
 pinned: true
 thumbnail: >-
   https://cdn-uploads.huggingface.co/production/uploads/686e28b405d4ddcdd96adeb2/i9iufR3L-rgj39mk_B9QW.jpeg
@@ -57,5 +57,3 @@ models:
 - zai-org/GLM-4.5
 - zai-org/GLM-4.5-Air
 ---
-
-This service is powered by the [Pollinations](https://github.com/pollinations/pollinations) open-source AI community.
