@@ -1,10 +1,10 @@
 {
   "name": "UltimaX Intelligence",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
-  "main": "index.js",
+  "main": "mapping.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node mapping.js"
   },
   "dependencies": {
     "express": "latest",
@@ -12,6 +12,7 @@
     "ws": "latest",
     "node-fetch": "latest",
     "cookie-parser": "latest",
-    "path": "latest"
+    "path": "latest",
+    "url": "latest"
   }
 }
