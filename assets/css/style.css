@@ -81,8 +81,9 @@ main {
 
 .system {
   text-align: center;
-  margin-top: 1.5rem;
-  font-size: 0.8rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 0.7rem;
   color: #9ca3af;
   word-break: break-word;
   overflow-wrap: break-word;

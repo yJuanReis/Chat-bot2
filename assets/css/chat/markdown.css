@@ -66,13 +66,8 @@
   max-width: 200px;
 }
 
-.md-content th {
-  background: rgba(255, 255, 255, 0.1);
-  font-weight: 600;
-}
-
-.md-content tbody tr:nth-child(odd) td {
-  background: rgba(255, 255, 255, 0.05);
+.md-content th, tbody tr:nth-child(odd) td {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .md-content ul {
@@ -119,7 +114,6 @@
   left: 1em;
   top: 0;
   font-size: 1.2em;
-  color: var(--color-primary);
 }
 
 .md-content ol > li {
@@ -134,14 +128,13 @@
   min-width: 2.5em;
   text-align: right;
   padding-right: 0.5em;
-  color: var(--color-primary);
   font-weight: 500;
 }
 
 .md-content hr {
   border: 0;
   height: 2px;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  background: #ffffff;
   margin: 1.2rem 0;
   border-radius: 2px;
 }
@@ -166,6 +159,6 @@
 }
 
 .md-content table td pre, .md-content table th pre {
-  max-height: 360px;
+  max-width: 480px;
   overflow: auto;
 }

@@ -12,10 +12,10 @@
   max-width: 100%;
   box-sizing: border-box;
   position: fixed;
-  bottom: 0;
+  bottom: 5rem;
   left: 0;
   right: 0;
   z-index: 1000;
   animation: slideInUp 0.3s ease-out forwards;
-  height: var(--footer-height);
+  height: 0;
 }
